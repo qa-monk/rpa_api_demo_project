@@ -1,0 +1,527 @@
+Date: Fri, 3 Jan 2025 17:19:36 +0000 (UTC)
+Message-ID: <923357074.31.1735924776557@9f69fa3721b1>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_30_1340456861.1735924776557"
+
+------=_Part_30_1340456861.1735924776557
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Comprehensive Guide to Setting Up Robot Framework for Test Autom=
+ation</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Comprehensive Guide to Setting Up Robot Framework for Test Automati=
+on</h1>
+    <div class=3D"Section1">
+        <h4 id=3D"ComprehensiveGuidetoSettingUpRobotFrameworkforTestAutomat=
+ion-Introduction"><strong>Introduction</strong></h4>
+<p>Robot Framework is an open-source, versatile test automation framework d=
+esigned for acceptance testing, acceptance test-driven development (ATDD), =
+and robotic process automation (RPA). Its keyword-driven approach simplifie=
+s creating test cases, making them readable and accessible to both technica=
+l and non-technical stakeholders.</p>
+<p>Built on Python, Robot Framework enables high-level, human-readable test=
+ scenarios and supports a range of libraries for API and UI testing. This g=
+uide details the steps for setting up Robot Framework, including necessary =
+prerequisites, installation processes, and setup verification. By the end, =
+you'll be equipped to create and execute test cases with ease.</p>
+<hr>
+<h3 id=3D"ComprehensiveGuidetoSettingUpRobotFrameworkforTestAutomation-Prer=
+equisites"><strong>Prerequisites</strong></h3>
+<ol start=3D"1">
+<li>
+<p>Integrated Development Environment (IDE)</p></li>
+<li>
+<p>Python Installation</p></li>
+<li>
+<p>pip Installation</p></li>
+<li>
+<p>Robot Framework Installation</p></li>
+<li>
+<p>Libraries for API and UI Testing</p></li>
+<li>
+<p>Verifying the Setup</p></li>
+</ol>
+<hr>
+<h3 id=3D"ComprehensiveGuidetoSettingUpRobotFrameworkforTestAutomation-1.Se=
+ttingUpanIDE"><strong>1. Setting Up an IDE</strong></h3>
+<h4 id=3D"ComprehensiveGuidetoSettingUpRobotFrameworkforTestAutomation-Opti=
+on1:PyCharm"><strong>Option 1: PyCharm</strong></h4>
+<p>PyCharm is a powerful IDE with robust support for Python development.</p=
+>
+<ul>
+<li>
+<p><strong>Download PyCharm:</strong></p>
+<ul>
+<li>
+<p>Visit the <a href=3D"https://www.jetbrains.com/pycharm/" class=3D"extern=
+al-link" rel=3D"nofollow">JetBrains PyCharm website</a>.</p></li>
+<li>
+<p>Choose <strong>Community Edition</strong> (free) or <strong>Professional=
+ Edition</strong> (paid).</p></li>
+</ul></li>
+<li>
+<p><strong>Install PyCharm:</strong></p>
+<ul>
+<li>
+<p>Run the installer and follow the setup instructions.</p></li>
+<li>
+<p>Ensure you select the option to "Add Python to PATH" during installation=
+.</p></li>
+</ul></li>
+</ul>
+<h4 id=3D"ComprehensiveGuidetoSettingUpRobotFrameworkforTestAutomation-Opti=
+on2:VisualStudioCode(VSCode)"><strong>Option 2: Visual Studio Code (VS Code=
+)</strong></h4>
+<p>VS Code is a lightweight and popular editor for Python development.</p>
+<ul>
+<li>
+<p><strong>Download VS Code:</strong></p>
+<ul>
+<li>
+<p>Navigate to the <a href=3D"https://code.visualstudio.com/" class=3D"exte=
+rnal-link" rel=3D"nofollow">Visual Studio Code website</a>.</p></li>
+<li>
+<p>Download and install the version compatible with your operating system.<=
+/p></li>
+</ul></li>
+</ul>
+<hr>
+<h3 id=3D"ComprehensiveGuidetoSettingUpRobotFrameworkforTestAutomation-2.In=
+stallingPython"><strong>2. Installing Python</strong></h3>
+<p>Python is essential for running Robot Framework.</p>
+<ul>
+<li>
+<p><strong>Download Python:</strong></p>
+<ul>
+<li>
+<p>Visit the <a href=3D"https://www.python.org/downloads/" class=3D"externa=
+l-link" rel=3D"nofollow">Python official website</a>.</p></li>
+</ul></li>
+<li>
+<p><strong>Install Python:</strong></p>
+<ul>
+<li>
+<p>Run the downloaded installer and follow the on-screen instructions.</p><=
+/li>
+<li>
+<p>Check the "Add Python to PATH" box during installation to simplify termi=
+nal commands.</p></li>
+</ul></li>
+</ul>
+<hr>
+<h3 id=3D"ComprehensiveGuidetoSettingUpRobotFrameworkforTestAutomation-3.In=
+stallingpip"><strong>3. Installing pip</strong></h3>
+<p><code>pip</code> is Python's package manager, used for installing librar=
+ies.</p>
+<ul>
+<li>
+<p><strong>Verify pip Installation:</strong> Run the following command in y=
+our terminal:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">bash</p=
+re>
+</div>
+</div>
+<p>Copy code</p>
+<p><code>pip --version</code></p></li>
+<li>
+<p><strong>Install or Upgrade pip (if necessary):</strong></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">bash</p=
+re>
+</div>
+</div>
+<p>Copy code</p>
+<p><code>python -m ensurepip --upgrade pip install --upgrade pip</code></p>=
+</li>
+</ul>
+<hr>
+<h3 id=3D"ComprehensiveGuidetoSettingUpRobotFrameworkforTestAutomation-4.In=
+stallingRobotFramework"><strong>4. Installing Robot Framework</strong></h3>
+<p>Robot Framework can be installed using pip or within your IDE.</p>
+<ul>
+<li>
+<p><strong>Using pip:</strong></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">bash</p=
+re>
+</div>
+</div>
+<p>Copy code</p>
+<p><code>pip install robotframework</code></p></li>
+<li>
+<p><strong>Through PyCharm:</strong></p>
+<ol start=3D"1">
+<li>
+<p>Open PyCharm and navigate to <code>File &gt; Settings &gt; Project &gt; =
+Python Interpreter</code>.</p></li>
+<li>
+<p>Click the gear icon and select <strong>Add Package</strong>.</p></li>
+<li>
+<p>Search for <code>robotframework</code> and click <strong>Install Package=
+</strong>.</p></li>
+</ol></li>
+</ul>
+<hr>
+<h3 id=3D"ComprehensiveGuidetoSettingUpRobotFrameworkforTestAutomation-5.Li=
+brariesforAPIandUITesting"><strong>5. Libraries for API and UI Testing</str=
+ong></h3>
+<p>To extend Robot Framework's capabilities, install additional libraries:<=
+/p>
+<ul>
+<li>
+<p><strong>API Testing Libraries:</strong></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">bash</p=
+re>
+</div>
+</div>
+<p>Copy code</p>
+<p><code>pip install requests robotframework-requests</code></p></li>
+<li>
+<p><strong>UI Testing Libraries:</strong></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">bash</p=
+re>
+</div>
+</div>
+<p>Copy code</p>
+<p><code>pip install robotframework-seleniumlibrary</code></p></li>
+<li>
+<p><strong>Additional Libraries:</strong> For data-driven testing and JSON =
+handling:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">bash</p=
+re>
+</div>
+</div>
+<p>Copy code</p>
+<p><code>pip install robotframework-pabot jsonlibrary jsonschema robotframe=
+work-excellibrary robotframework-csvlibrary robotframework-datadriver</code=
+></p></li>
+</ul>
+<hr>
+<h3 id=3D"ComprehensiveGuidetoSettingUpRobotFrameworkforTestAutomation-6.Ve=
+rifyingtheSetup"><strong>6. Verifying the Setup</strong></h3>
+<h4 id=3D"ComprehensiveGuidetoSettingUpRobotFrameworkforTestAutomation-Pyth=
+onScriptTest"><strong>Python Script Test</strong></h4>
+<ol start=3D"1">
+<li>
+<p>Create a file named <code>hello_world.py</code> with the following conte=
+nt:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">python<=
+/pre>
+</div>
+</div>
+<p>Copy code</p>
+<p><code>print("Hello, World!")</code></p></li>
+<li>
+<p>Run the script:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">bash</p=
+re>
+</div>
+</div>
+<p>Copy code</p>
+<p><code>python hello_world.py</code></p></li>
+<li>
+<p>Expected Output:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">Copy co=
+de</pre>
+</div>
+</div>
+<p><code>Hello, World!</code></p></li>
+</ol>
+<h4 id=3D"ComprehensiveGuidetoSettingUpRobotFrameworkforTestAutomation-Robo=
+tFrameworkTest"><strong>Robot Framework Test</strong></h4>
+<ol start=3D"1">
+<li>
+<p>Create a file named <code>test_setup.robot</code> with the following con=
+tent:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">robot</=
+pre>
+</div>
+</div>
+<p>Copy code</p>
+<p><code>*** Settings *** Documentation A simple test to check Robot Framew=
+ork installation. *** Test Cases *** Hello World [Documentation] A simple t=
+est case Log Hello, World!</code></p></li>
+<li>
+<p>Run the test:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">bash</p=
+re>
+</div>
+</div>
+<p>Copy code</p>
+<p><code>robot test_setup.robot</code></p></li>
+<li>
+<p>Expected Output:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">Copy co=
+de</pre>
+</div>
+</div>
+<p><code>Hello, World!</code></p></li>
+</ol>
+<hr>
+<h3 id=3D"ComprehensiveGuidetoSettingUpRobotFrameworkforTestAutomation-Conc=
+lusion"><strong>Conclusion</strong></h3>
+<p>By following this guide, you have successfully set up Robot Framework, i=
+nstalled essential libraries, and verified the installation. This foundatio=
+nal setup equips you to create and execute API and UI test cases, leveragin=
+g the flexibility and power of Robot Framework for automation. Happy testin=
+g!</p>
+    </div>
+</body>
+</html>
+------=_Part_30_1340456861.1735924776557--
